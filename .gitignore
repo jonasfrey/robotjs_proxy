@@ -1,0 +1,24 @@
+# this is a deno project!!!
+package.json
+package-lock.json
+
+# Dependency directories
+node_modules/
+
+# Debug log from npm
+npm-debug.log*
+
+# Environment variables
+.env
+
+# Optional npm cache directory
+.npm
+
+# Optional eslint cache
+.eslintcache
+
+# MacOS folder attribute files
+.DS_Store
+
+# Optional REPL history
+.node_repl_history
