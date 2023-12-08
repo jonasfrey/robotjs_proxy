@@ -32,6 +32,10 @@ import {
 //md: call a robotjs function
 
 console.log(o_robot_js);
+let v = await o_robot_js.getMousePos();
+console.log(v.x)
 await o_robot_js.moveMouseSmooth(1200,1200)
-console.log(await o_robot_js.getXDisplayName())
-console.log(await o_robot_js.typeString('hello lol'))
+// console.log(await o_robot_js.getXDisplayName())
+// console.log(await o_robot_js.typeString('hello lol'))
+
+//readme.md:start

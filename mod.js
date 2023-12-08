@@ -23,7 +23,7 @@ let o_robot_js = {};
 
 for(let s_prop of a_s_name_prop){
     o_robot_js[s_prop] = async function(){
-        return await f_s_from_node_command(
+        let s = await f_s_from_node_command(
             `
             let a_v_arg = [${
                 Array.from(arguments)
@@ -39,6 +39,7 @@ for(let s_prop of a_s_name_prop){
             console.log(JSON.stringify(o['${s_prop}'](...a_v_arg)))
             `
         )
+        return JSON.parse(s)
     }
 }
 
